@@ -18,7 +18,7 @@ public class Main {
 		lista.add(entrada); //voy guardando en la lista lo que me va metiendo por teclado
 		entrada = s.nextLine();	
 		lista.add(entrada);
-		//Ya tengo las líneas cogidas.
+		//Ya tengo las lineas cogidas.
 		m.jolly(lista);
 		s.close();
 	}
@@ -31,7 +31,7 @@ public class Main {
 			StringTokenizer tokens = new StringTokenizer(fila);
 			int n1 = Integer.parseInt(tokens.nextToken());
 			int n2 = 0;
-			int cont = 0; //Para saber cuántos números tengo
+			int cont = 0; //Para saber cuantos numeros tengo
 			while (tokens.hasMoreTokens()) {
 				cont ++;
 				n2 = Integer.parseInt(tokens.nextToken());
@@ -39,7 +39,7 @@ public class Main {
 				else restas.add(n2 - n1);
 				n1 = n2;
 			}
-			int cont2 = 0; //para comprobar que todos las restas hechas son menores al número de números
+			int cont2 = 0; //para comprobar que todos las restas hechas son menores al numero de numeros
 			Iterator it2 = restas.iterator();
 			while (it2.hasNext()) {
 				int n = (int) it2.next();
